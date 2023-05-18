@@ -11,16 +11,23 @@
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" method="POST" action="" class="survey_form">
         <div class="form-section">
-            <label for="name">Name</label>
-            <input name="name" id="name" type="text"/>
+            <label for="name" id="name-label">Name</label>
+            <input name="name" id="name" type="text" placeholder="Please enter name here"/>
         </div>
         <div class="form-section">
-            <label for="email">Email</label>
-            <input name="email" id="email" type="email"/>
+            <label for="email" id="email-label">Email</label>
+            <input name="email" id="email" type="email" placeholder="Please enter email here"/>
         </div>
         <div class="form-section">
-            <label for="number">Number</label>
-            <input name="number" id="email" type="number" min="0" max="50"/>
+            <label for="number" id="number-label">Number</label>
+            <input name="number" id="email" type="number" min="0" max="50" placeholder="Please enter number here"/>
+        </div>
+        <div class="form-section">
+            <select name="" id="dropdown">
+                <option value="">Please select from the dropdown</option>
+                <option value="option_one">Option One</option>
+                <option value="option_two">Option Two</option>
+            </select>
         </div>
     </form>
 </body>
