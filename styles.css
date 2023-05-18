@@ -3,6 +3,23 @@ body{
     height: 100vh;
     background-color: rgb(148, 162, 201);
     padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+form{
+    width: 60%;
+    padding: 25px;
+    border-radius: 5px;
+    background-color: rgb(42, 73, 160);
+    margin-left: auto;
+    margin-right: auto;
+    border-color: '#000';
+    border-width: 7px;
+    z-index: 20;
+    box-shadow: 5px 5px 5px '#000';
 }
 #title{
     text-align: center;
@@ -12,8 +29,8 @@ body{
 #description{
     text-align: center;
 }
-form{
-    padding: 25px;
-    border-radius: 5px;
-    background-color: rgb(42, 73, 160);
+.form-section{
+    margin: 5px 0px;
+    width: 80%;
+    background-color: "#234576";
 }
