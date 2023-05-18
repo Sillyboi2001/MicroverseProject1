@@ -7,7 +7,7 @@
     <title>Survey Form</title>
 </head>
 <body>
-    <h1 id="title">FreeCodeCamp Survey Form</h1>
+    <h1 id="title">Silas and Julius Survey Form</h1>
     <p id="description">Thank you for taking the time to help us improve the platform</p>
     <form id="survey-form" method="POST" action="" class="survey_form">
         <div class="form-section">
@@ -16,18 +16,32 @@
         </div>
         <div class="form-section">
             <label for="email" id="email-label">Email</label>
-            <input name="email" id="email" type="email" placeholder="Please enter email here"/>
+            <input name="email" id="email" type="email" placeholder="Please enter email here" required/>
         </div>
         <div class="form-section">
             <label for="number" id="number-label">Number</label>
             <input name="number" id="email" type="number" min="0" max="50" placeholder="Please enter number here"/>
         </div>
         <div class="form-section">
-            <select name="" id="dropdown">
+            <label for="number" id="number-label">Which option best describes your current role?</label><br/>
+            <select name="Please select your options" id="dropdown">
                 <option value="">Please select from the dropdown</option>
                 <option value="option_one">Option One</option>
                 <option value="option_two">Option Two</option>
             </select>
+        </div>
+        <div class="form-section">
+            <p>Would you recommend this survey to someone else?</p>
+            <input type="radio" id="yes">Yes</input><br/>
+            <input type="radio" id="no">No</input><br/>
+            <input type="radio" id="maybe">Maybe</input><br/>
+        </div>
+        <div class="form-section">
+            <p>What would you like to see improved?</p>
+            <input type="checkbox" id="front-end">Front-end projects</input><br/>
+            <input type="checkbox" id="back-end">Back-end projects</input><br/>
+            <input type="checkbox" id="data-visual">Data visualization</input><br/>
+            <input type="checkbox" id="wiki">Wiki</input><br/>
         </div>
     </form>
 </body>
